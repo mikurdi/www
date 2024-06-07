@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="ie=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>mowaffaq kurdi</title>
+      <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@500&display=swap" rel="stylesheet">
+      <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+      <link rel="stylesheet" href="style.css">
+      <script src="script.js"></script>
+	  <script>  
+
+
+var count=0;
+var stage=1;
+var stage2=3;
+var counter=setInterval(timer, 10000); //1000 will  run it every 1 second
+var ref="Configuring updates";
+
+function timer()
+{
+  count=count+1;
+  if (count <= 0)
+  {
+     clearInterval(counter);
+     return;
+  }
+
+ document.getElementById("timer").innerHTML=count +'%';document.getElementById("timer2").innerHTML=count +'%';
+ 
+ 
+ 
+   if (count > 99)
+  {
+     stage=stage+1;
+	  document.getElementById("stage").innerHTML=stage +'';
+	 count=0;
+	  return;
+  }
+  
+     if (stage > 3)
+  {
+     stage2=68;
+     ref="Installing Updates";
+	  document.getElementById("ref").innerHTML=ref +'';
+	  document.getElementById("stage2").innerHTML=stage2 +'';
+	  return;
+  }
+  
+}
+
+
+
+
+</script>
+	  
+</head>
+<body>
+  <div class="msg">Welcome To My Page...</div>
+  <div id="console">
+  </div>
+  <center>
+
+  <div class="mask"> <img src="mo.png"> </div>
+  
+  <canvas id="matrix"></canvas>
+  
+    <div class="content">
+      <div class="random">
+        <!-- Here text wich you want to add in counter -->
+        <span class="str ltr">H</span>
+        <span class="str ltr">A</span>
+        <span class="str ltr">R</span>
+        <span class="str ltr">U</span>
+        <span class="str ltr">N</span>
+        <span class="str ltr">P</span>
+        <span class="str ltr">E</span>
+        <span class="str ltr">H</span>
+        <span class="str ltr">L</span>
+        <span class="str ltr">İ</span>
+        <span class="str ltr">V</span>
+        <span class="str ltr">A</span>
+        <span class="str ltr">N</span>
+        <span class="str ltr">0</span>
+		<div class="center">
+<h1 data-translate="_win10updates1">Installing Windows 10</h1>
+<p style="color:#afafaf;" data-translate="_win10updates2">Your PC will restart several times. Sit back and relax.</p>
+<div style="clear:both;" class="progress-bar position"><div class="background"></div><div class="rotate"></div><div class="left"></div><div class="right"></div><div class=""><span><a id="timer">0%</a></span></div></div>
+<script>
+		$(".progress-bar").loading();
+		$('input').on('click', function () {
+			 $(".progress-bar").loading();
+		});
+	</script>
+</div>
+<p id="bottom"><span style="color:#afafaf" data-translate="_win10updates3">Copying Files</span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <span style="color:#177dcf" data-translate="_win10updates4">Installing features and drivers <a id="timer2">0%</a></span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <span style="color:#afafaf" data-translate="_win10updates5">Configuring settings</span></p>
+</center>
+</div>
+<div id="black"><img id="myImage2" src="QOBYXA3.png"></div><br>
+<video mute="" loop="" style="z-index:-1;opacity:0.1;width:1px;height:1px;position:fixed;left:1px;bottom:1px;">
+<source src="pixel.mp4" type="video/mp4">
+</video>
+      </div>
+    </div>
+</body>
+</html>
